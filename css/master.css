@@ -10,7 +10,9 @@ img{
 ul{
     list-style-type: none;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 /*=== Aplicando CSS al encabezado===*/
 #logo{
     width: 50%;
@@ -34,6 +36,10 @@ ul{
         display: grid;
         grid-template-columns: 1fr 2fr; /*Medidas: px em rem % fr*/
         align-items: center;
+        position: fixed;
+        width:100%;
+        z-index: 100;
+        background-color: white;
     }
     #menu{
         display: grid;
@@ -58,8 +64,24 @@ ul{
         grid-template-columns: 1fr 1fr;
         gap: 10px;
     }
-
-
+/*aplicando css al footer*/
+#piePagina{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 0.5fr;
+    justify-items: center;
+    align-items: center;
+    background-color: blue;
+    color: white;
+}
+#redesSociales{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+ion-icon{
+    color: white;
+    font-size: 2rem;
+}
 }
 /*X-Large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) { 
